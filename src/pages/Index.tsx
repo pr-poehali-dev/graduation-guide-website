@@ -3,6 +3,13 @@ import { Card, CardContent } from "@/components/ui/card";
 import Icon from "@/components/ui/icon";
 
 const Index = () => {
+  const scrollToSection = (id: string) => {
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <div className="min-h-screen">
       <section className="relative h-screen flex items-center justify-center bg-gradient-to-br from-primary/90 via-secondary/80 to-accent/70 overflow-hidden">
@@ -22,17 +29,25 @@ const Index = () => {
               <Icon name="Download" className="mr-2" size={20} />
               Скачать памятку (PDF)
             </Button>
-            <Button size="lg" variant="outline" className="text-lg px-8 py-6 border-2 border-white text-white hover:bg-white/20 shadow-xl">
+            <Button 
+              size="lg" 
+              variant="outline" 
+              className="text-lg px-8 py-6 border-2 border-white text-white hover:bg-white/20 shadow-xl"
+              onClick={() => scrollToSection('advantages')}
+            >
               Узнать больше
             </Button>
           </div>
         </div>
-        <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce">
+        <button 
+          onClick={() => scrollToSection('advantages')}
+          className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce cursor-pointer bg-transparent border-none"
+        >
           <Icon name="ChevronDown" size={32} className="text-white" />
-        </div>
+        </button>
       </section>
 
-      <section className="py-20 bg-white">
+      <section id="advantages" className="py-20 bg-white">
         <div className="container mx-auto px-4">
           <h2 className="text-4xl md:text-5xl font-bold text-center mb-4">
             Здесь тебя ждут не только воспоминания, но и возможности
