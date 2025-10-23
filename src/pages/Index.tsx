@@ -32,7 +32,7 @@ const Index = () => {
       <section className="relative h-screen flex items-center justify-center bg-gradient-to-br from-primary/90 via-secondary/80 to-accent/70 overflow-hidden">
         <div 
           className="absolute inset-0 bg-cover bg-center opacity-30"
-          style={{ backgroundImage: 'url(https://cdn.poehali.dev/projects/5dbb0f6c-21d9-4607-9734-ae2c9c4edd16/files/793b2ea4-80fc-497a-a498-545928d37a25.jpg)' }}
+          style={{ backgroundImage: 'url(https://cdn.poehali.dev/projects/5dbb0f6c-21d9-4607-9734-ae2c9c4edd16/files/136911a3-5077-4c83-91b8-5306993c0039.jpg)' }}
         />
         <div className="relative z-10 container mx-auto px-4 text-center text-white animate-fade-in">
           <h1 className="text-5xl md:text-7xl font-bold mb-6 drop-shadow-lg">
@@ -70,60 +70,58 @@ const Index = () => {
 
       <section id="advantages" className="py-20 bg-white">
         <div className="container mx-auto px-4">
-          <h2 className="text-4xl md:text-5xl font-bold text-center mb-4">
-            Здесь тебя ждут не только воспоминания, но и возможности
+          <h2 className="text-4xl md:text-5xl font-bold text-center mb-4 text-foreground">
+            Здесь тебя ждут не только воспоминания,
           </h2>
-          <p className="text-center text-xl text-muted-foreground mb-16">Почему Усть-Катав для учебы?</p>
+          <h2 className="text-4xl md:text-5xl font-bold text-center mb-16 text-primary">
+            но и возможности
+          </h2>
           
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-            <Card className="border-2 border-primary/20 hover:border-primary hover:shadow-xl transition-all duration-300 animate-fade-in">
-              <CardContent className="p-8 text-center">
-                <div className="w-20 h-20 mx-auto mb-6 bg-primary/10 rounded-full flex items-center justify-center">
-                  <span className="text-5xl">💰</span>
-                </div>
-                <h3 className="text-2xl font-bold mb-4 text-primary">Финансовая свобода</h3>
-                <p className="text-lg font-semibold mb-2">Низкие затраты — высокое качество жизни</p>
-                <p className="text-muted-foreground">
-                  Обучение в филиалах и колледжах Челябинска рядом с домом. Аренда жилья не съедает весь бюджет. Трать деньги на саморазвитие, а не на выживание.
+          <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
+            <Card className="border-2 hover:shadow-xl transition-shadow duration-300">
+              <CardContent className="p-8">
+                <div className="text-6xl mb-4">💰</div>
+                <h3 className="text-2xl font-bold mb-3 text-foreground">Финансовая свобода</h3>
+                <h4 className="text-xl font-semibold mb-3 text-primary">Низкие затраты — высокое качество жизни</h4>
+                <p className="text-muted-foreground leading-relaxed">
+                  Обучение в филиалах и колледжах Челябинска и других городов рядом с домом. 
+                  Аренда жилья не съедает весь бюджет. Трати деньги на саморазвитие, а не на выживание в мегаполисе.
                 </p>
               </CardContent>
             </Card>
 
-            <Card className="border-2 border-secondary/20 hover:border-secondary hover:shadow-xl transition-all duration-300 animate-fade-in" style={{ animationDelay: '0.1s' }}>
-              <CardContent className="p-8 text-center">
-                <div className="w-20 h-20 mx-auto mb-6 bg-secondary/10 rounded-full flex items-center justify-center">
-                  <span className="text-5xl">👨‍🏫</span>
-                </div>
-                <h3 className="text-2xl font-bold mb-4 text-secondary">Персональный подход</h3>
-                <p className="text-lg font-semibold mb-2">Ты — личность, а не номер в списке</p>
-                <p className="text-muted-foreground">
-                  Небольшие группы, доступность преподавателей, индивидуальный подход. Здесь действительно знают твое имя и помогают раскрыть потенциал.
+            <Card className="border-2 hover:shadow-xl transition-shadow duration-300">
+              <CardContent className="p-8">
+                <div className="text-6xl mb-4">👨‍🏫</div>
+                <h3 className="text-2xl font-bold mb-3 text-foreground">Персональный подход</h3>
+                <h4 className="text-xl font-semibold mb-3 text-secondary">Ты — личность, а не номер в списке</h4>
+                <p className="text-muted-foreground leading-relaxed">
+                  Небольшие группы, доступность преподавателей, индивидуальный подход к обучению. 
+                  Здесь действительно знают твое имя и помогают раскрыть потенциал.
                 </p>
               </CardContent>
             </Card>
 
-            <Card className="border-2 border-accent/20 hover:border-accent hover:shadow-xl transition-all duration-300 animate-fade-in" style={{ animationDelay: '0.2s' }}>
-              <CardContent className="p-8 text-center">
-                <div className="w-20 h-20 mx-auto mb-6 bg-accent/10 rounded-full flex items-center justify-center">
-                  <span className="text-5xl">🚀</span>
-                </div>
-                <h3 className="text-2xl font-bold mb-4 text-accent">Практика с первого курса</h3>
-                <p className="text-lg font-semibold mb-2">Теория + практика = востребованность</p>
-                <p className="text-muted-foreground">
-                  УКВЗ и другие предприятия — твоя уникальная производственная база. Стажировки, практики и трудоустройство рядом с домом.
+            <Card className="border-2 hover:shadow-xl transition-shadow duration-300">
+              <CardContent className="p-8">
+                <div className="text-6xl mb-4">🚀</div>
+                <h3 className="text-2xl font-bold mb-3 text-foreground">Практика с первого курса</h3>
+                <h4 className="text-xl font-semibold mb-3 text-accent">Теория + практика = востребованность</h4>
+                <p className="text-muted-foreground leading-relaxed">
+                  Усть-Катавский вагоностроительный завод и другие предприятия — твоя уникальная производственная база. 
+                  Стажировки, практики и трудоустройство рядом с домом.
                 </p>
               </CardContent>
             </Card>
 
-            <Card className="border-2 border-secondary/20 hover:border-secondary hover:shadow-xl transition-all duration-300 animate-fade-in" style={{ animationDelay: '0.3s' }}>
-              <CardContent className="p-8 text-center">
-                <div className="w-20 h-20 mx-auto mb-6 bg-secondary/10 rounded-full flex items-center justify-center">
-                  <span className="text-5xl">🌳</span>
-                </div>
-                <h3 className="text-2xl font-bold mb-4 text-secondary">Жизнь в ритме "ЭКО"</h3>
-                <p className="text-lg font-semibold mb-2">Здоровый образ жизни как норма</p>
-                <p className="text-muted-foreground">
-                  Чистый воздух, река Юрюзань, леса и горы вместо пробок. Спортивные секции, турклубы и отдых на природе в 15 минутах от дома.
+            <Card className="border-2 hover:shadow-xl transition-shadow duration-300">
+              <CardContent className="p-8">
+                <div className="text-6xl mb-4">🌳</div>
+                <h3 className="text-2xl font-bold mb-3 text-foreground">Жизнь в ритме "ЭКО"</h3>
+                <h4 className="text-xl font-semibold mb-3 text-secondary">Здоровый образ жизни как норма</h4>
+                <p className="text-muted-foreground leading-relaxed">
+                  Чистый воздух, река Юрюзань, леса и горы вместо часов в пробках. 
+                  Спортивные секции, турклубы и возможность отдохнуть на природе в 15 минутах от дома.
                 </p>
               </CardContent>
             </Card>
@@ -131,138 +129,159 @@ const Index = () => {
         </div>
       </section>
 
-      <section className="py-20 bg-gradient-to-br from-primary/5 to-secondary/5">
+      <section id="steps" className="py-20 bg-gradient-to-br from-primary/5 to-secondary/5">
         <div className="container mx-auto px-4">
-          <h2 className="text-4xl md:text-5xl font-bold text-center mb-4">
+          <h2 className="text-4xl md:text-5xl font-bold text-center mb-16 text-foreground">
             Как построить карьеру, не уезжая?
-          </h2>
-          <p className="text-center text-xl text-muted-foreground mb-16">Твои шаги к успеху в Усть-Катаве</p>
-          
-          <div className="max-w-4xl mx-auto space-y-8">
-            <div className="flex gap-6 items-start group">
-              <div className="w-16 h-16 bg-primary rounded-full flex items-center justify-center text-white text-2xl font-bold flex-shrink-0 group-hover:scale-110 transition-transform">
-                1
-              </div>
-              <div>
-                <h3 className="text-2xl font-bold mb-2 flex items-center gap-2">
-                  <Icon name="GraduationCap" className="text-primary" size={28} />
-                  Выбери направление
-                </h3>
-                <p className="text-lg text-muted-foreground">
-                  Усть-Катавский филиал ЮУрГУ, местные колледжи, центры профподготовки — множество вариантов для твоего развития.
-                </p>
-              </div>
-            </div>
-
-            <div className="flex gap-6 items-start group">
-              <div className="w-16 h-16 bg-secondary rounded-full flex items-center justify-center text-white text-2xl font-bold flex-shrink-0 group-hover:scale-110 transition-transform">
-                2
-              </div>
-              <div>
-                <h3 className="text-2xl font-bold mb-2 flex items-center gap-2">
-                  <Icon name="Award" className="text-secondary" size={28} />
-                  Получи поддержку
-                </h3>
-                <p className="text-lg text-muted-foreground">
-                  Муниципальные гранты, стипендии и программы поддержки молодежи помогут тебе на старте.
-                </p>
-              </div>
-            </div>
-
-            <div className="flex gap-6 items-start group">
-              <div className="w-16 h-16 bg-accent rounded-full flex items-center justify-center text-white text-2xl font-bold flex-shrink-0 group-hover:scale-110 transition-transform">
-                3
-              </div>
-              <div>
-                <h3 className="text-2xl font-bold mb-2 flex items-center gap-2">
-                  <Icon name="Users" className="text-accent" size={28} />
-                  Найди единомышленников
-                </h3>
-                <p className="text-lg text-muted-foreground">
-                  Молодежная палата, волонтерские движения, IT-сообщество, клубы предпринимателей — найди свою команду.
-                </p>
-              </div>
-            </div>
-
-            <div className="flex gap-6 items-start group">
-              <div className="w-16 h-16 bg-primary rounded-full flex items-center justify-center text-white text-2xl font-bold flex-shrink-0 group-hover:scale-110 transition-transform">
-                4
-              </div>
-              <div>
-                <h3 className="text-2xl font-bold mb-2 flex items-center gap-2">
-                  <Icon name="Briefcase" className="text-primary" size={28} />
-                  Начни работать
-                </h3>
-                <p className="text-lg text-muted-foreground">
-                  Портал "Работа в России" и вакансии УКВЗ для студентов — старт твоей карьеры уже здесь.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section className="py-20 bg-white">
-        <div className="container mx-auto px-4">
-          <h2 className="text-4xl md:text-5xl font-bold text-center mb-16">
-            Развеиваем сомнения
           </h2>
           
           <div className="max-w-4xl mx-auto space-y-6">
             <Card className="border-l-4 border-l-primary hover:shadow-lg transition-shadow">
-              <CardContent className="p-8">
-                <div className="flex items-start gap-4">
-                  <Icon name="X" className="text-destructive flex-shrink-0" size={28} />
-                  <div className="flex-1">
-                    <h3 className="text-xl font-bold mb-2 text-destructive">Миф: "В маленьком городе нет перспектив"</h3>
-                  </div>
+              <CardContent className="p-8 flex items-start gap-6">
+                <div className="flex-shrink-0 w-12 h-12 rounded-full bg-primary text-primary-foreground flex items-center justify-center text-xl font-bold">
+                  1
                 </div>
-                <div className="flex items-start gap-4 mt-4">
-                  <Icon name="Check" className="text-secondary flex-shrink-0" size={28} />
-                  <div className="flex-1">
-                    <h3 className="text-xl font-bold mb-2 text-secondary">Правда:</h3>
-                    <p className="text-muted-foreground text-lg">
-                      Перспективы есть там, где есть инициатива. Здесь меньше конкуренции и больше шансов проявить себя и быстро занять ответственные позиции.
+                <div>
+                  <h3 className="text-2xl font-bold mb-3 text-foreground">Выбери направление</h3>
+                  <p className="text-muted-foreground mb-3">
+                    Изучи программы Усть-Катавского филиала ЮУрГУ, местных колледжей и центров профподготовки
+                  </p>
+                  <Button variant="link" className="p-0 h-auto text-primary">
+                    <Icon name="ExternalLink" size={16} className="mr-2" />
+                    Посмотреть учебные заведения
+                  </Button>
+                </div>
+              </CardContent>
+            </Card>
+
+            <Card className="border-l-4 border-l-secondary hover:shadow-lg transition-shadow">
+              <CardContent className="p-8 flex items-start gap-6">
+                <div className="flex-shrink-0 w-12 h-12 rounded-full bg-secondary text-secondary-foreground flex items-center justify-center text-xl font-bold">
+                  2
+                </div>
+                <div>
+                  <h3 className="text-2xl font-bold mb-3 text-foreground">Получи поддержку</h3>
+                  <p className="text-muted-foreground">
+                    Узнай о муниципальных грантах, стипендиях и программах поддержки молодежи в Усть-Катаве
+                  </p>
+                </div>
+              </CardContent>
+            </Card>
+
+            <Card className="border-l-4 border-l-accent hover:shadow-lg transition-shadow">
+              <CardContent className="p-8 flex items-start gap-6">
+                <div className="flex-shrink-0 w-12 h-12 rounded-full bg-accent text-accent-foreground flex items-center justify-center text-xl font-bold">
+                  3
+                </div>
+                <div>
+                  <h3 className="text-2xl font-bold mb-3 text-foreground">Найди единомышленников</h3>
+                  <p className="text-muted-foreground">
+                    Присоединяйся к Молодежной палате, волонтерским движениям, IT-сообществу и клубам по интересам
+                  </p>
+                </div>
+              </CardContent>
+            </Card>
+
+            <Card className="border-l-4 border-l-primary hover:shadow-lg transition-shadow">
+              <CardContent className="p-8 flex items-start gap-6">
+                <div className="flex-shrink-0 w-12 h-12 rounded-full bg-primary text-primary-foreground flex items-center justify-center text-xl font-bold">
+                  4
+                </div>
+                <div>
+                  <h3 className="text-2xl font-bold mb-3 text-foreground">Начни работать</h3>
+                  <p className="text-muted-foreground mb-3">
+                    Ищи вакансии на портале "Работа в России" и стажировки на УКВЗ для студентов
+                  </p>
+                  <Button variant="link" className="p-0 h-auto text-primary">
+                    <Icon name="ExternalLink" size={16} className="mr-2" />
+                    Открыть вакансии
+                  </Button>
+                </div>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+      </section>
+
+      <section id="myths" className="py-20 bg-white">
+        <div className="container mx-auto px-4">
+          <h2 className="text-4xl md:text-5xl font-bold text-center mb-4 text-foreground">
+            Мифы и правда
+          </h2>
+          <p className="text-xl text-center mb-16 text-muted-foreground">
+            Развеиваем сомнения
+          </p>
+          
+          <div className="max-w-5xl mx-auto space-y-8">
+            <Card className="border-2 overflow-hidden">
+              <CardContent className="p-0">
+                <div className="grid md:grid-cols-2">
+                  <div className="bg-destructive/10 p-8">
+                    <div className="flex items-center gap-3 mb-4">
+                      <Icon name="X" className="text-destructive" size={32} />
+                      <h3 className="text-2xl font-bold text-foreground">Миф</h3>
+                    </div>
+                    <p className="text-lg text-foreground font-semibold">
+                      "В маленьком городе нет перспектив"
+                    </p>
+                  </div>
+                  <div className="bg-secondary/10 p-8">
+                    <div className="flex items-center gap-3 mb-4">
+                      <Icon name="Check" className="text-secondary" size={32} />
+                      <h3 className="text-2xl font-bold text-foreground">Правда</h3>
+                    </div>
+                    <p className="text-lg text-foreground">
+                      Перспективы есть там, где есть инициатива. Здесь меньше конкуренции и больше шансов проявить себя и быстро занять ответственные позиции
                     </p>
                   </div>
                 </div>
               </CardContent>
             </Card>
 
-            <Card className="border-l-4 border-l-primary hover:shadow-lg transition-shadow">
-              <CardContent className="p-8">
-                <div className="flex items-start gap-4">
-                  <Icon name="X" className="text-destructive flex-shrink-0" size={28} />
-                  <div className="flex-1">
-                    <h3 className="text-xl font-bold mb-2 text-destructive">Миф: "Здесь негде отдыхать"</h3>
+            <Card className="border-2 overflow-hidden">
+              <CardContent className="p-0">
+                <div className="grid md:grid-cols-2">
+                  <div className="bg-destructive/10 p-8">
+                    <div className="flex items-center gap-3 mb-4">
+                      <Icon name="X" className="text-destructive" size={32} />
+                      <h3 className="text-2xl font-bold text-foreground">Миф</h3>
+                    </div>
+                    <p className="text-lg text-foreground font-semibold">
+                      "Здесь негде отдыхать"
+                    </p>
                   </div>
-                </div>
-                <div className="flex items-start gap-4 mt-4">
-                  <Icon name="Check" className="text-secondary flex-shrink-0" size={28} />
-                  <div className="flex-1">
-                    <h3 className="text-xl font-bold mb-2 text-secondary">Правда:</h3>
-                    <p className="text-muted-foreground text-lg">
-                      Кино, кафе, мероприятия в ДК, набережная, спорт, походы, сообщества по интересам. А главное — твой круг общения, который ты создаешь сам.
+                  <div className="bg-secondary/10 p-8">
+                    <div className="flex items-center gap-3 mb-4">
+                      <Icon name="Check" className="text-secondary" size={32} />
+                      <h3 className="text-2xl font-bold text-foreground">Правда</h3>
+                    </div>
+                    <p className="text-lg text-foreground">
+                      Кино, кафе, мероприятия в ДК, набережная, спорт, походы, сообщества по интересам. А главное — твой круг общения, который ты создаешь сам
                     </p>
                   </div>
                 </div>
               </CardContent>
             </Card>
 
-            <Card className="border-l-4 border-l-primary hover:shadow-lg transition-shadow">
-              <CardContent className="p-8">
-                <div className="flex items-start gap-4">
-                  <Icon name="X" className="text-destructive flex-shrink-0" size={28} />
-                  <div className="flex-1">
-                    <h3 className="text-xl font-bold mb-2 text-destructive">Миф: "Я останусь здесь навсегда"</h3>
+            <Card className="border-2 overflow-hidden">
+              <CardContent className="p-0">
+                <div className="grid md:grid-cols-2">
+                  <div className="bg-destructive/10 p-8">
+                    <div className="flex items-center gap-3 mb-4">
+                      <Icon name="X" className="text-destructive" size={32} />
+                      <h3 className="text-2xl font-bold text-foreground">Миф</h3>
+                    </div>
+                    <p className="text-lg text-foreground font-semibold">
+                      "Я останусь здесь навсегда"
+                    </p>
                   </div>
-                </div>
-                <div className="flex items-start gap-4 mt-4">
-                  <Icon name="Check" className="text-secondary flex-shrink-0" size={28} />
-                  <div className="flex-1">
-                    <h3 className="text-xl font-bold mb-2 text-secondary">Правда:</h3>
-                    <p className="text-muted-foreground text-lg">
-                      Получив качественное и доступное образование с практикой, ты можешь работать откуда угодно или строить карьеру на местном предприятии. Усть-Катав — это надежный трамплин.
+                  <div className="bg-secondary/10 p-8">
+                    <div className="flex items-center gap-3 mb-4">
+                      <Icon name="Check" className="text-secondary" size={32} />
+                      <h3 className="text-2xl font-bold text-foreground">Правда</h3>
+                    </div>
+                    <p className="text-lg text-foreground">
+                      Получив качественное и доступное образование с практикой, ты можешь работать откуда угодно или строить карьеру на местном предприятии. Усть-Катав — это надежный трамплин
                     </p>
                   </div>
                 </div>
@@ -272,49 +291,54 @@ const Index = () => {
         </div>
       </section>
 
-      <section className="py-20 bg-gradient-to-br from-secondary/5 to-accent/5">
+      <section id="success-stories" className="py-20 bg-gradient-to-br from-secondary/10 to-primary/10">
         <div className="container mx-auto px-4">
-          <h2 className="text-4xl md:text-5xl font-bold text-center mb-4">
-            Они остались и не пожалели
+          <h2 className="text-4xl md:text-5xl font-bold text-center mb-4 text-foreground">
+            Истории успеха
           </h2>
-          <p className="text-center text-xl text-muted-foreground mb-16">Истории успеха</p>
+          <p className="text-xl text-center mb-16 text-muted-foreground">
+            Они остались и не пожалели
+          </p>
           
           <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-            <Card className="hover:shadow-xl transition-all duration-300 hover:-translate-y-2">
-              <CardContent className="p-8 text-center">
-                <div className="w-24 h-24 mx-auto mb-6 bg-gradient-to-br from-primary to-secondary rounded-full flex items-center justify-center text-white text-4xl">
-                  <Icon name="Wrench" size={40} />
-                </div>
-                <h3 className="text-2xl font-bold mb-2">Алексей, 25 лет</h3>
-                <p className="text-primary font-semibold mb-4">Инженер на УКВЗ</p>
+            <Card className="overflow-hidden hover:shadow-xl transition-shadow duration-300">
+              <div 
+                className="h-64 bg-cover bg-center"
+                style={{ backgroundImage: 'url(https://cdn.poehali.dev/projects/5dbb0f6c-21d9-4607-9734-ae2c9c4edd16/files/f3072e2f-e5f5-4a9f-be36-8997dfb6ace1.jpg)' }}
+              />
+              <CardContent className="p-6">
+                <h3 className="text-xl font-bold mb-2 text-foreground">Алексей, 26 лет</h3>
+                <p className="text-primary font-semibold mb-3">Инженер на УКВЗ</p>
                 <p className="text-muted-foreground">
-                  "Получил образование в местном филиале ЮУрГУ. Уже на 3 курсе начал практику на заводе. Сейчас — ведущий инженер. Работа интересная, зарплата достойная!"
+                  "Получил образование в филиале ЮУрГУ, сразу устроился на завод. Сейчас руковожу отделом. Карьерный рост здесь быстрее, чем в большом городе"
                 </p>
               </CardContent>
             </Card>
 
-            <Card className="hover:shadow-xl transition-all duration-300 hover:-translate-y-2">
-              <CardContent className="p-8 text-center">
-                <div className="w-24 h-24 mx-auto mb-6 bg-gradient-to-br from-accent to-primary rounded-full flex items-center justify-center text-white text-4xl">
-                  <Icon name="Laptop" size={40} />
-                </div>
-                <h3 className="text-2xl font-bold mb-2">Мария, 23 года</h3>
-                <p className="text-accent font-semibold mb-4">IT-специалист на удаленке</p>
+            <Card className="overflow-hidden hover:shadow-xl transition-shadow duration-300">
+              <div 
+                className="h-64 bg-cover bg-center"
+                style={{ backgroundImage: 'url(https://cdn.poehali.dev/projects/5dbb0f6c-21d9-4607-9734-ae2c9c4edd16/files/9f5c0507-fc33-4f84-99ac-1afdea604e01.jpg)' }}
+              />
+              <CardContent className="p-6">
+                <h3 className="text-xl font-bold mb-2 text-foreground">Мария, 24 года</h3>
+                <p className="text-secondary font-semibold mb-3">IT-специалист на удаленке</p>
                 <p className="text-muted-foreground">
-                  "Училась программированию онлайн, живу в Усть-Катаве. Работаю на московскую компанию удаленно. Живу у реки, хожу в походы — это счастье!"
+                  "Работаю в московской компании из дома. Зарплата столичная, а расходы минимальные. Живу в своем доме с садом, о чем в Москве и мечтать не могла"
                 </p>
               </CardContent>
             </Card>
 
-            <Card className="hover:shadow-xl transition-all duration-300 hover:-translate-y-2">
-              <CardContent className="p-8 text-center">
-                <div className="w-24 h-24 mx-auto mb-6 bg-gradient-to-br from-secondary to-accent rounded-full flex items-center justify-center text-white text-4xl">
-                  <Icon name="Store" size={40} />
-                </div>
-                <h3 className="text-2xl font-bold mb-2">Дмитрий, 27 лет</h3>
-                <p className="text-secondary font-semibold mb-4">Предприниматель</p>
+            <Card className="overflow-hidden hover:shadow-xl transition-shadow duration-300">
+              <div 
+                className="h-64 bg-cover bg-center"
+                style={{ backgroundImage: 'url(https://cdn.poehali.dev/projects/5dbb0f6c-21d9-4607-9734-ae2c9c4edd16/files/dde73229-b573-45a4-949b-d9ca2ae67962.jpg)' }}
+              />
+              <CardContent className="p-6">
+                <h3 className="text-xl font-bold mb-2 text-foreground">Дмитрий, 29 лет</h3>
+                <p className="text-accent font-semibold mb-3">Предприниматель</p>
                 <p className="text-muted-foreground">
-                  "Открыл свое кафе в центре города. Небольшие стартовые вложения, лояльные клиенты. Бизнес растет, город развивается вместе с нами!"
+                  "Открыл свое кафе в центре города. Конкуренция небольшая, аренда доступная. За три года окупил вложения и открываю второе заведение"
                 </p>
               </CardContent>
             </Card>
@@ -322,54 +346,60 @@ const Index = () => {
         </div>
       </section>
 
-      <footer className="py-16 bg-gradient-to-r from-primary via-secondary to-accent text-white">
-        <div className="container mx-auto px-4 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6">
-            Твое будущее начинается здесь и сейчас.<br />Сделай осознанный выбор!
-          </h2>
-          
-          <div className="mb-8">
-            <Button size="lg" className="bg-white text-primary hover:bg-gray-100 text-lg px-8 py-6">
+      <footer className="bg-foreground text-background py-16">
+        <div className="container mx-auto px-4">
+          <div className="text-center max-w-3xl mx-auto mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold mb-6">
+              Твое будущее начинается здесь и сейчас
+            </h2>
+            <p className="text-xl mb-8 opacity-90">
+              Сделай осознанный выбор!
+            </p>
+            <Button 
+              size="lg"
+              className="text-lg px-8 py-6 bg-primary text-primary-foreground hover:bg-primary/90"
+              onClick={downloadPDF}
+            >
               <Icon name="Download" className="mr-2" size={20} />
-              Скачать полную памятку
+              Скачать памятку (PDF)
             </Button>
           </div>
-
-          <div className="max-w-2xl mx-auto mb-8">
-            <h3 className="text-xl font-bold mb-4">Контакты</h3>
-            <p className="flex items-center justify-center gap-2 mb-2">
-              <Icon name="Phone" size={20} />
-              <span>+7 (XXX) XXX-XX-XX</span>
-            </p>
-            <p className="flex items-center justify-center gap-2">
-              <Icon name="Mail" size={20} />
-              <span>молодежь@усть-катав.рф</span>
-            </p>
-          </div>
-
-          <div className="flex justify-center gap-6 mb-8">
-            <a href="#" className="hover:scale-110 transition-transform">
-              <div className="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center hover:bg-white/30">
-                <Icon name="MessageCircle" size={24} />
+          
+          <div className="border-t border-background/20 pt-8">
+            <div className="grid md:grid-cols-2 gap-8 mb-8">
+              <div>
+                <h3 className="text-xl font-bold mb-4 flex items-center gap-2">
+                  <Icon name="Phone" size={20} />
+                  Контакты
+                </h3>
+                <p className="opacity-90 mb-2">Отдел по делам молодежи г. Усть-Катав</p>
+                <p className="opacity-90">Телефон: +7 (000) 000-00-00</p>
+                <p className="opacity-90">Email: molodezh@ust-katav.ru</p>
               </div>
-            </a>
-            <a href="#" className="hover:scale-110 transition-transform">
-              <div className="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center hover:bg-white/30">
-                <Icon name="Instagram" size={24} />
+              
+              <div>
+                <h3 className="text-xl font-bold mb-4 flex items-center gap-2">
+                  <Icon name="Users" size={20} />
+                  Мы в соцсетях
+                </h3>
+                <div className="flex gap-4">
+                  <Button variant="outline" size="icon" className="border-background text-background hover:bg-background hover:text-foreground">
+                    <Icon name="MessageCircle" size={20} />
+                  </Button>
+                  <Button variant="outline" size="icon" className="border-background text-background hover:bg-background hover:text-foreground">
+                    <Icon name="Send" size={20} />
+                  </Button>
+                  <Button variant="outline" size="icon" className="border-background text-background hover:bg-background hover:text-foreground">
+                    <Icon name="Globe" size={20} />
+                  </Button>
+                </div>
               </div>
-            </a>
-            <a href="#" className="hover:scale-110 transition-transform">
-              <div className="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center hover:bg-white/30">
-                <Icon name="Facebook" size={24} />
-              </div>
-            </a>
-          </div>
-
-          <div className="flex flex-wrap justify-center gap-4 text-sm">
-            <span>#УстьКатав</span>
-            <span>#ПамяткаВыпускника</span>
-            <span>#ВернутьсяВУК</span>
-            <span>#БудущееЗдесь</span>
+            </div>
+            
+            <div className="text-center opacity-75">
+              <p className="mb-2">#УстьКатав #ПамяткаВыпускника #ВернутьсяВУК #БудущееЗдесь</p>
+              <p className="text-sm">© 2024 Администрация г. Усть-Катав. Все права защищены.</p>
+            </div>
           </div>
         </div>
       </footer>
