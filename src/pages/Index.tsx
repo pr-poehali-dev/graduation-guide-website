@@ -10,6 +10,23 @@ const Index = () => {
     }
   };
 
+  const downloadPDF = async () => {
+    try {
+      const response = await fetch('https://functions.poehali.dev/8af7c4c1-9ca3-432e-956a-577a20fd7487');
+      const blob = await response.blob();
+      const url = window.URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = 'pamyatka-vypusknika.pdf';
+      document.body.appendChild(a);
+      a.click();
+      window.URL.revokeObjectURL(url);
+      document.body.removeChild(a);
+    } catch (error) {
+      console.error('Ошибка загрузки PDF:', error);
+    }
+  };
+
   return (
     <div className="min-h-screen">
       <section className="relative h-screen flex items-center justify-center bg-gradient-to-br from-primary/90 via-secondary/80 to-accent/70 overflow-hidden">
@@ -25,7 +42,11 @@ const Index = () => {
             Узнай, почему твой родной город — идеальное место для качественного образования и яркой студенческой жизни
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" className="text-lg px-8 py-6 bg-white text-primary hover:bg-gray-100 shadow-xl">
+            <Button 
+              size="lg" 
+              className="text-lg px-8 py-6 bg-white text-primary hover:bg-gray-100 shadow-xl"
+              onClick={downloadPDF}
+            >
               <Icon name="Download" className="mr-2" size={20} />
               Скачать памятку (PDF)
             </Button>

@@ -1,0 +1,10 @@
+{
+  "tests": [
+    {
+      "name": "Generate PDF successfully",
+      "method": "GET",
+      "path": "/",
+      "expectedStatus": 200
+    }
+  ]
+}
